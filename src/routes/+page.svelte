@@ -1,5 +1,5 @@
 <script>
-	import { browser, dev } from '$app/env';
+	import { browser, dev } from '$app/environment';
 	import { fly, slide } from 'svelte/transition';
 
 	import { alerts } from '$lib/data/alerts';
