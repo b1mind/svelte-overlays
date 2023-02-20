@@ -1,0 +1,254 @@
+//Stream list
+Todo:
+  ✔ migrate to SvelteKit 1.0 full release @done
+  ☐ gifted users to activity list
+  ☐ allow !focus accept a time param to pass into component
+  ☐ bring overlay.html/afk.html and other static local files into project (keep local)
+  ☐ spotify intergration investigation
+  ☐ implement song/artist into overlay with Snip
+    //https://github.com/dlrudie/Snip
+
+Intro/Outro:
+  ✔ better bounding width for intro/outro to center text @done
+  ✔ refactor lines svg to use use @done
+  ✔ make the gradient glow @done
+  ☐ different sound for intro/outro timer up/end
+
+Questions:
+  ☐ how to get twitch overlay dark/light mode button?
+  ☐ better transitions for switching between scenes (ask KP or BM)
+  ☐ look back into a new screenkey caster away from vsc?
+  ✘ should AFK show chat ? (currently does not) @cancelled
+  ☐ make a different overlay for commands seperated from alerts?
+  ☐ really need to change up !title/topic/today.. decide already!?
+  ☐ how to save OBS views? popout view for testing ?
+  ✔ learn how to create backup as part of bare repo @done
+
+QoL: 
+  ☐ find out what best bitrate or any changes to OBS for net quality (and call cable guy)
+  ☐ host gifs on server change the urls (try to macro)
+  ☐ different browser for stream (edge insiders?)
+  ☐ mute icon scene to use with AFK or at any time
+  ☐ admin type panel to insert into OBS (w/chat?) crutchCorn is making this
+  ☐ playlists mubert, OWN3D, Gamecaster, Bass Rebels, Streambeast(using)
+    //revisit but none really jumped out at me
+
+Affiliate: 
+  ☐ emotes for subs
+  ☐ cheer icons
+  ☐ points icons
+  ☐ subMonth icons
+
+Channel Points:
+  //will need auth for every thing but highlight
+  ☐ highlighted alert chat bubble for yuki 
+  ☐ make a list or mind map for channel point ideas
+  ☐ change song and replay song
+  ☐ banger save song some how or name to add to a playlist
+
+Cam/Overlay Ideas:
+  ✔ animated svg for intro/outro scenes (text animations or masked bg) @done
+  ✔ test flags.highlighter can be used for yuki chat? @done
+
+twitch settings:
+  ✔ create better Panel copywrite: Bio - About - Story for below stream @done
+  ✔ image when offline or recordings/host @done
+  ✔ setup auto hosting to my fav streamers if I am offline @done
+  ☐ obs or twitch bitrate settings or any modifiers for bandwidth
+  ☐ find out what types of subs do what i.e. reSub giftSub mysterySub
+  ☐ choose how to tip/donate to stream Patron or Paypal?
+  ☐ make a profile banner for background
+  ☐ spice up logo for meta data
+  ☐ make some more clips and highlight reels
+
+Chat commands:
+  ☐ !typo for mistakes made in the code
+  ☐ EasterEgg: emote combos with fossabot and alerts or some notification
+  ☐ !project | !today - explain current project as to inform new viewers
+  ☐ !lurk - msg to in chat + overlay if sub
+  ☐ !figs - link to bare repo?
+  ☐ !tools - "Milwaukee Drills are best"
+  ☐ !fontUp - vsc cycle.FontToggle
+  ☐ !todo - show chat todo | goals from that todo  
+  ☐ !unmute command
+  ☐ !collab/!fusion dbz merge/fusion gif
+  ☐ !kitty look at the kitty for when you get sidetracked
+  ☐ !discord link on blog post (wds, kp, feh links?)
+  ☐ !4am make a gif for studio 60 quote
+
+GIFs:
+  ☐ cheer, // no idea 
+  ✔ reSub // look for something to complement sub gif @done
+  ☐ giftSub // make gif of Milly Meryl handing donuts to vash
+
+VIP / Subonly:
+  ☐ !more commands period maybe get feedback from chat
+  ☐ !marinate (grab letter kenny gif)
+  ☐ !wifeBurn when wife gives me shit for something and I am talking about it
+  ☐ redo the wording for fish
+  ☐ food gif needs to be bellpeppers n beef 
+
+AHK / QMK:
+  ☐ AHK script like capslock to tell me active scene on main screen
+  ☐ keybind for mute and with AHK notification
+  ☐ cmGriffing mentioned sound and maybe hooking it to AHK or QMK
+  ☐ Visual key overlay for QMK or Kris inputs vs cam
+    // QMK input checker website?
+
+Tech debt:
+  ☐ alerts animations tied into interface/overlay with GSAP better easing+yoyo
+  ☐ factor ugly if else chain for recent activity
+  ☐ timer refactor with -time elapse working
+  ☐ use the same time refactor method for alerts animation
+  ☐ timer on focus needs reset if timer === 0
+  ☐ get auth working with comfy.js
+  ☐ Twitch-Cli mock server working! //so close yet so far.. get help!(Prince?)
+    // stuck here how to I slurp the Post data https://youtu.be/omBzmgAppYQ?t=2109
+    //$ twitch event trigger subscribe -F https://localhost:3000/api/eventsub/
+    Post "https://localhost:3000/api/eventsub/": http: server gave HTTP response to HTTPS client
+
+Wishlist:
+  ☐ intro/outro with music (kenny, or fractal??)
+  ☐ Todo list goals for focus mode
+  ☐ backgrounds behind Yuki and I (hot,cold, river, underwater, ninja, focus?)
+  ☐ Get incoming raid's channel title, not have to ask but can get right to it
+  ☐ finish keeb page with captions/text explaining more.. later into blog post
+  ☐ AFK scene SVG custom for 16:9
+  ☐ AFK game - something for chat, cats away mice will play
+  ☐ custom.Cycle take two vsc commands.. Font for terminal needs ++
+  ☐ talk with Chantastic about how he does discord voice setup
+  ☐ comicate with vsCode via chat commands (call commands!)
+  ☐ make socials clickable, learn how to make clickable overlays
+  ☐ keyboard io - kris software plug-in for lighting connect to chat?
+  ☐ look into snapchat filters (https://snapcamera.snapchat.com)
+  ☐ animated SVG based on voice patterns to mimic talking
+    //exp: https://www.twitch.tv/goki_dev 
+  ☐ look into DIY streamdecks (yt history has good ones?)
+    //exp https://www.touch-portal.com/ 
+    //or https://obsproject.com/forum/resources/lioranboard-2-stream-deck-animator.862/
+
+Archive:
+  ✔ intro/outro needs work... redesign time (think animations) @done @project(Today)
+  ✔ alerts gif mask/boarder needs added/improved @done @project(Today)
+  ✔ Bring Twitch about md panels into file(s) fo ease of edit @done @project(Todo.QoL)
+  ✔ use scenes in scenes (!so finitesingularity) @done @project(Today)
+  ✔ censored/blurred scene needs to have cam blocker. @done @project(Today)
+  ✔ MUST obstract into its own project/repo @done @project(Today)
+  ✔ set up hosting on vps @done @project(Today)
+  ✔ configure auto deploy with github repo @done @project(Today)
+  ✔ clean up animations for floating emotes @done @project(Today)
+  ✘ fix unicode emotes to work with floating theme @cancelled @project(Today)
+  ✔ test local storage and use it for recent activity @done @project(Today)
+  ✔ start obstracting to components where it makes sense @done @project(Today)
+  ✔ bring in gsap and test rotating recent activity with modes like orig idea @done @project(Today)
+  ✔ svg masking for alerts gif @done @project(Today)
+  ✔ svg mask needs some touch up and polish @done @project(Today)
+  ✔ floating chat overlay @done @project(Today)
+  ✔ can I grab user img like I would a badge and use it in overlay? (not w/comfy) @done @project(Today)
+  ✔ floating emoji's (tie into fossabot combos) DM Manni @done @project(Questions)
+  ✔ Can Streamparrot/ShowMyChat be use for floating emotes? @done @project(Questions)
+  ✘ modes text box needs to rotate information like last sub/follow?/or something. @cancelled @project(Todo.Cam/Overlay Ideas)
+  ✔ improve on chat popup animation and styles @done @project(Tech debt)
+  ✔ chat needs higher limit or some kinda timer or queue @done @project(Tech debt)
+  ✔ Timer's use of setInterval is not the best method. Look to other solutions @done @project(Tech debt)
+  ✔ change screencast pos @done @project(Today)
+  ✔ recent activity list right bar @done @project(Today)
+  ✘ add a rotating last sub/follow/raid in mode box @cancelled @project(Today)
+  ✔ style the recent activity list @done @project(Today)
+  ✔ start a feature branch for node refactor @done @project(Today)
+  ✔ follow alert work around onChat() @done @project(Today)
+  ✔ fix emote position in chat overlay @done @project(Today)
+  ✔ !yuki (same as highlight but no points?) @done(22-03-03 13:02) @project(Todo.VIP / Subonly)
+  ✔ chat overlay broadcaster color active pink @done(22-02-27 12:33) @project(Today)
+  ✔ stash timer refactor as a feature. (moved to tech debt) @done(22-03-03 11:38) @project(Today)
+  ✔ push chat changes after timer fix @done(22-03-03 11:38) @project(Today)
+  ✔ !topic/title/today needs to be worked out @done(22-03-03 11:38) @project(Today)
+  ✔ clean up store or leave default data @done(22-03-03 12:23) @project(Today)
+  ✔ rename $alerts['names'] as they are better visual name @done(22-03-03 12:23) @project(Today)
+  ✔ highlight alert with msg on screen, hide from chat overlay @done(22-03-03 12:49) @project(Today)
+  ✔ Mute icon for all scenes? Can I detect mute? (if its a sene?) @done(22-03-03 11:41) @project(Questions)
+  ✔ get some defaults right off the bat @done(22-03-03 11:41) @project(Todo.Channel Points)
+  ✔ !extensions - probably going to ask about nVim and others? @done(22-02-24 20:59) @project(Today)
+  ✔ chat fixes VIP color and icon @done(22-02-26 12:19) @project(Today)
+  ✔ large raid alert not work (bad sound file name) @done(22-02-26 12:31) @project(Today)
+  ✔ powertoys window docking - want locked window set ups to toggle @done(22-02-24 17:34) @project(Todo.QoL)
+  ✔ timer color for UI needs change AAA @done(22-02-20 12:51) @project(Today)
+  ✔ alert tag/type needs AA check again (use white like timer?) @done(22-02-20 13:52) @project(Today)
+  ✔ mode inactive color needs to be increased @done(22-02-20 13:52) @project(Today)
+  ✔ Conversation scene - for chatting to chat *visible overlay @done(22-02-20 14:16) @project(Today)
+  ✔ main bottom h1/text to display !today / !title / !project info @done(22-02-20 14:56) @project(Today)
+  ✔ Find sound files to use html .play() in js @done(22-02-21 00:45) @project(Today)
+  ✔ timer up sound.ogg for focus timer @done(22-02-21 00:46) @project(Today)
+  ✔ chat popup for main scene @done(22-02-21 13:27) @project(Today)
+  ✔ second overlay (obs browser) showchat limit=xx needs its own CSS styles @done(22-02-23 14:29) @project(Today)
+  ✔ should AFK screen have chat overlay? (yes) @done(22-02-19 16:25) @project(Questions)
+  ✔ Should !today different than !title ? !project (yes !today h1) @done(22-02-21 01:18) @project(Questions)
+  ✔ how am I going to handle chat overlay, popout or full time scene @done(22-02-23 15:13) @project(Questions)
+  ✔ prevent spam > Toggle commands or Timeout @done(22-02-23 15:21) @project(Todo.VIP / Subonly)
+  ✘ use comfy to make auto shout out and !so command (needs auth?) @cancelled(22-02-21 01:17) @project(Tech debt)
+  ✔ decide where non-alert gifs should go @done(22-02-19 16:24) @project(Todo.Cam/Overlay Ideas)
+  ✔ check UI on smaller devices to see readability and line smoothness @done(22-02-19 16:24) @project(Tech debt)
+  ✔ Starting soon and ending soon overlay scenes @done(22-02-17 13:51) @project(Today)
+  ✔ raid < 20 champloo gif 20 > faye fish gif (make my own later) @done(22-02-19 12:32) @project(Today)
+  ✔ complete the rest of the ComfyJs methods before getting affiliate @done(22-02-19 13:09) @project(Today)
+  ✔ sub/reSub/giftSub alerts for each @done(22-02-19 13:09) @project(Today)
+  ✔ make the !so command work with anything at this point @done(22-02-19 13:57) @project(Today)
+  ✔ //make banners based on UI design so it matchs... but get copy up! @done(22-02-13 12:47) @project(Todo.twitch settings)
+  ✔ change recordings to on (must list to be public) @done(22-02-13 12:08) @project(Todo.twitch settings)
+  ✔ circle behind icon censored scene @done(22-02-13 12:40) @project(Todo.Cam/Overlay Ideas)
+  ✔ gaming overlay + scene @done(22-02-13 13:20) @project(Todo.Cam/Overlay Ideas)
+  ✔ alert commands based on groups vipList ect @done(22-02-13 13:36) @project(Todo.Cam/Overlay Ideas)
+  ✔ chat for intro/outro neeeds better placement within UI overlay @done(22-02-18 23:24) @project(Todo.Cam/Overlay Ideas)
+  ✔ !fish // !learn Learning any thing new is hard, like fishing it can take a lifetime @done(22-02-14 10:15) @project(Todo.VIP / Subonly)
+  ✔ !try https://media.giphy.com/media/EC2JvlspR35q8/giphy.gif @done(22-02-14 10:15) @project(Todo.VIP / Subonly)
+  ✔ !nope - https://media.giphy.com/media/USNlL9p2fxY6Q/giphy.gif @done(22-02-14 10:15) @project(Todo.VIP / Subonly)
+  ✔ !food https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif @done(22-02-14 10:15) @project(Todo.VIP / Subonly)
+  ✔ make layer for "streamdeck" in QMK (using omg key) @done(22-02-13 13:22) @project(Wishlist)
+  ✘ !so shout out feature for other Twitch streamers | streamElements or Fossabot can handle @cancelled(22-02-13 11:40) @project(Todo.QoL)
+  ✔ On screen timer baked into overlay & scene. (I see it on 2cnd window?) @done(22-02-11 11:54) @project(Todo)
+  ✔ Fix timer bugs | fixmes @done(22-02-11 12:57) @project(Todo)
+  ✔ design decisions for timer and @done(22-02-12 14:33) @project(Todo)
+  ✔ make panel banner graphics @done(22-02-11 16:38) @project(Todo.twitch info)
+  ✔ Better AFK scene - added timer && made svg larger on screen. @done(22-02-11 12:56) @project(Todo.Cam/Overlay Ideas)
+  ✔ Decide on raid gif? @done(22-02-12 15:33) @project(Questions)
+  ✔ playing sounds via StreamElements or custom? @done(22-02-12 15:33) @project(Questions)
+  ✔ should I make a mask for keeb cam ? @done(22-02-12 15:33) @project(Questions)
+  ✔ how to handle gif's for alerts? or just animations? @done(22-02-12 15:33) @project(Questions)
+  ✔ need queue for alerts to stack https://www.javascripttutorial.net/javascript-queue/ @done(22-02-10 18:35) @project(Todo.Refactor)
+  ✔ learn how to do custom overlay alerts using wrapper api of some short @done(22-02-04 21:15) @project(Todo)
+  ✔ import comfy.js if browser but in svelte not html dom @done(22-02-05 01:30) @project(Todo)
+  ✔ find design ideas and see what others are doing for frame overlay @done(22-02-05 01:30) @project(Todo)
+  ✔ color a11y checks for interface @done(22-02-06 16:54) @project(Todo)
+  ✔ import GSAP and use timelines for alerts @done(22-02-07 12:59) @project(Todo)
+  ✔ keeb build pictures just put in profile url /stream/keeb/ *placeholder Made* @done(22-02-09 00:31) @project(Todo)
+  ✔ Mode need function and better flag check @done(22-02-08 20:32) @project(Todo.Refactor)
+  ✔ refactor alerts/modes better @done(22-02-08 20:29) @project(Todo.Refactor)
+  ✔ ~~Alerts needs abstracted~~ or do they @done(22-02-08 20:32) @project(Todo.Refactor)
+  ✔ temp timer (made till gsap is used) @done(22-02-08 20:33) @project(Todo.Refactor)
+  ✔ svelte out animation @done(22-02-08 20:47) @project(Todo.Refactor)
+  ✔ make a svelte store for alert state @done(22-02-09 12:46) @project(Todo.Refactor)
+  ✘ need to make alerts async for stacked alerts... @cancelled(22-02-09 13:08) @project(Todo.Refactor)
+  ✔ BETTER LIGHTING FOR KEEB CAM (ordered on the way!) @done(22-02-07 11:53) @project(Todo.QoL for all)
+  ✔ Improve cam quality, lighting, and resolution @done(22-02-06 21:23) @project(Todo.QoL for all)
+  ✔ mute for AFK scene @done(22-02-09 13:16) @project(Todo.QoL for all)
+  ✔ Move mic to other side so if looking at chat I am talking into mic @done(22-02-09 13:23) @project(Todo.QoL for all)
+  ✔ really need to get a usbHub (ordered) _Have USBextension some where.. find it_ @done(22-02-09 13:23) @project(Todo.QoL for all)
+  ✔ get Krisp working better so I don't sound underwater and quiet @done(22-02-09 13:37) @project(Todo.QoL for all)
+  ✔ Focus,ghost,chat mode - have cmd for chat @done(22-02-05 01:30) @project(Todo.Cam/Overlay Ideas)
+  ✔ Night/Insomnia Mode - Muted* ? or just don't stream at night... @done(22-02-04 20:15) @project(Todo.Cam/Overlay Ideas)
+  ✔ !focus alert gif https://media.giphy.com/media/u6xMPnzIyJB84/giphy.gif @done(22-02-06 23:32) @project(Todo.Cam/Overlay Ideas)
+  ✔ !ghost gif https://media.giphy.com/media/3o7buhsTerQAmHRztC/giphy.gif @done(22-02-06 23:32) @project(Todo.Cam/Overlay Ideas)
+  ✔ env var for testing alert overlay @done(22-02-08 20:48) @project(Todo.Cam/Overlay Ideas)
+  ✔ !focus could have msg or title @done(22-02-05 18:15) @project(Todo.Chat commands)
+  ✔ !chat should accept msg or have title @done(22-02-05 18:15) @project(Todo.Chat commands)
+  ✔ !cam - let people why no face cam @done(22-02-05 01:37) @project(Todo.Chat commands)
+  ✔ !pc specs simple @done(22-02-05 01:37) @project(Todo.Chat commands)
+  ✔ try a hosted/local sveltekit page as overlay from portfolio @done(22-02-03 10:36) @project(Todo)
+  ✔ figure out best way to host scenes (local/vps) @done(22-02-04 14:02i) @project(Todo)
+  ✔ picture for main overlay frame @done(22-02-03 10:37) @project(Todo)
+  ✔ configured mic/aux filters for noise suppression without Krisp. @done(22-02-01 19:14) @project(Todo)
+  ✔ one last round of sound checks (Krisp) @done(22-02-01 18:50) @project(Todo)
+  ✔ blur screen scene or overlay to block sensitive data. @done(22-02-01 19:02) @project(Todo)
+  ✔ add keybinding for scene switching @done(22-02-01 22:17) @project(Todo)
+  ✔ AFK scene @done(22-02-02 22:02) @project(Todo.Cam/Overlay Ideas)
+  ✔ Blur scene animates a cover or something for keeb cam @done(22-02-02 22:02) @project(Todo.Cam/Overlay Ideas)

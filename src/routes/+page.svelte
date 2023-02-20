@@ -164,11 +164,12 @@
 			//todo subGroup.forEach or better way to check both
 			const subGroup = [...vipGroup, 'subscriber'];
 			//currently any one can call these alerts
-			const subCmdList = ['fish', 'fail', 'nope', 'food'];
+			const subCmdList = ['fish', 'fail', 'nope', 'food', 'subscribed', 'followed', 'raid'];
 
 			vipGroup.forEach((level) => {
 				if (flags[level] && vipCmdList.includes(command)) {
 					runAlert(command, user, message);
+					console.log('ran vip alert');
 				}
 			});
 
@@ -186,6 +187,7 @@
 				if (lastUserCmd !== 0 && lastUserCmd < 10000) return;
 
 				runAlert(command, (user = ''), message);
+				console.log('alert ran');
 			}
 		};
 
